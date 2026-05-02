@@ -1,0 +1,6 @@
+[2026-05-02 15:15:46] Registered user: ivan
+[2026-05-02 15:15:51] Login success: ivan
+[2026-05-02 15:16:47] Login success: ivan
+[2026-05-02 15:20:40] Login success: petarr
+[2026-05-02 15:22:11] Login success: petarr
+[2026-05-02 15:25:06] Login success: petarr
