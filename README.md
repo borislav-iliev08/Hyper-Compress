@@ -1,4 +1,4 @@
-# Hype Compress v1.0.0
+# Hyper Compress v1.0.0
 
 A professional, secure file compression and management tool built with Python and PyQt5.
 
@@ -14,3 +14,29 @@ A professional, secure file compression and management tool built with Python an
 1. Clone the repository:
    ```bash
    git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
+Install dependencies:
+
+Bash
+pip install PyQt5
+Run the application:
+
+Bash
+python main_file.py
+🔒 Security Notice
+This software is the intellectual property of Borislav Ivanov Iliev. The source code includes license verification mechanisms. Unauthorized modification of the developer information is strictly prohibited.
+
+📬 Contact
+Developer: Borislav Ivanov Iliev
+
+Email: borislav718@gmail.com
+
+Location: Yambol, Bulgaria
+
+
+---
+
+
+
+
+
+**Сега проектът ти е на "световно ниво".** Всеки, който влезе в профила ти, ще види я
