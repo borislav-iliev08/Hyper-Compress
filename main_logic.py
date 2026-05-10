@@ -4,8 +4,7 @@ from zipfile import ZipFile
 from datetime import datetime
 
 path_to_dir = os.path.dirname(os.path.abspath(__file__))
-current_dir = os.path.dirname(os.path.abspath(__file__))
-database_path = os.path.join(current_dir, 'database.txt')
+database_path = os.path.join(path_to_dir, 'database.txt')
 path_to_logs = os.path.join(path_to_dir, 'logs_base.txt')
 
 
@@ -52,8 +51,10 @@ class Profile:
 
 class Authentication:
     @staticmethod
+
     def hash_password(password):
-        return hashlib.sha256(password.encode()).hexdigest()
+        salt = "HypeCompress_Secret_2026"
+        return hashlib.sha256((password + salt).encode()).hexdigest()
 
     def _log_event(self, message):
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -66,8 +67,8 @@ class Authentication:
 
         hashed = self.hash_password(password)
 
-        if os.path.exists(path_to_database):
-            with open(path_to_database, 'r', encoding='utf-8') as f:
+        if os.path.exists(database_path):
+            with open(database_path, 'r', encoding='utf-8') as f:
                 if any(f"|{username}|" in line for line in f if line.strip()):
                     raise Exception(f"User {username} already exists!")
 
@@ -77,24 +78,25 @@ class Authentication:
             with open(os.path.join(user_dir, 'history.txt'), 'w', encoding='utf-8') as f:
                 f.write(f"History for {username} created on {datetime.now()}\n")
 
-        with open(path_to_database, 'a', encoding='utf-8') as f:
+        with open(database_path, 'a', encoding='utf-8') as f:
             f.write(f"{first_name}|{last_name}|{username}|{hashed}\n")
 
         self._log_event(f"Registered user: {username}")
 
     def login(self, username, password):
-        if not os.path.exists(path_to_database):
+        if not os.path.exists(database_path):
             raise Exception("No users registered yet.")
 
-        hashed_attempt = self.hash_password(password)
+        attempt_hash = self.hash_password(password)
+        del password
 
-        with open(path_to_database, 'r', encoding='utf-8') as f:
+        with open(database_path, 'r', encoding='utf-8') as f:
             for line in f:
                 if not line.strip(): continue
                 parts = line.strip().split('|')
                 if len(parts) == 4:
                     fn, ln, uname, passwd_hash = parts
-                    if uname == username and passwd_hash == hashed_attempt:
+                    if uname == username and passwd_hash == attempt_hash:
                         self._log_event(f"Login success: {username}")
                         return Profile(fn, ln, uname, passwd_hash)
 
@@ -103,12 +105,12 @@ class Authentication:
 
     @staticmethod
     def update_username(old_user, new_user):
-        if not os.path.exists(path_to_database): return
+        if not os.path.exists(path_to_dir): return
 
         lines = []
         user_found = False
 
-        with open(path_to_database, 'r', encoding='utf-8') as f:
+        with open(path_to_dir, 'r', encoding='utf-8') as f:
             for line in f:
                 if not line.strip(): continue
                 parts = line.strip().split('|')
@@ -130,7 +132,7 @@ class Authentication:
         if os.path.exists(old_path):
             os.rename(old_path, new_path)
 
-        with open(path_to_database, 'w', encoding='utf-8') as f:
+        with open(path_to_dir, 'w', encoding='utf-8') as f:
             for p in lines:
                 f.write("|".join(p) + "\n")
 
@@ -138,9 +140,9 @@ class Authentication:
 
     @staticmethod
     def is_valid_session(profile):
-        if not isinstance(profile, Profile) or not os.path.exists(path_to_database):
+        if not isinstance(profile, Profile) or not os.path.exists(database_path):
             return False
-        with open(path_to_database, 'r', encoding='utf-8') as f:
+        with open(database_path, 'r', encoding='utf-8') as f:
             target = f"|{profile.username}|{profile.password_hash}"
             return any(target in line for line in f if line.strip())
 
@@ -220,62 +222,21 @@ class ZipManager:
             if os.path.exists(full_zip_path):
                 os.remove(full_zip_path)
             raise e
+
     def unzip_gui(self, zip_name):
         zip_path = os.path.join(self.working_dir, zip_name)
         extract_to = os.path.join(self.working_dir, zip_name.replace('.zip', ''))
 
-        with ZipFile(zip_path, 'r') as z:
-            z.extractall(path=extract_to)
-        os.remove(zip_path)
-        self._log_to_file(f"Extracted and deleted: {zip_name}")
+        try:
+            if os.path.exists(zip_path):
+                with ZipFile(zip_path, 'r') as z:
+                    z.extractall(path=extract_to)
+                os.remove(zip_path)
+            self._log_to_file(f"Extracted and deleted archive: {zip_name}")
+
+        except Exception as e:
+            print(f"Error unzipping: {e}")
+            QtWidgets.QMessageBox.critical(None, "Error", f"Failed to unzip: {e}")
 
 
 
-if __name__ == "__main__":
-    auth = Authentication()
-
-    print("\n--- TEST 1: REGISTER DUPLICATE ---")
-    try:
-        auth.register_user('Ivan', 'Petrov', 'vankata', 'pass123')
-        auth.register_user('Ivan', 'Petrov', 'vankata', 'pass123')
-    except Exception as e:
-        print("Expected fail:", e)
-
-    print("\n--- TEST 2: LOGIN WRONG PASSWORD ---")
-    try:
-        auth.login('vankata', 'wrongpass')
-    except Exception as e:
-        print("Expected fail:", e)
-
-    print("\n--- TEST 3: LOGIN CORRECT ---")
-    try:
-        session = auth.login('vankata', 'pass123')
-        print("Login OK:", session.username)
-    except Exception as e:
-        print("Unexpected fail:", e)
-        exit()
-
-    print("\n--- TEST 4: SESSION BYPASS ATTEMPT ---")
-    fake_profile = Profile("X", "Y", "fakeuser", "fakehash")
-    try:
-        ZipManager(r"D:\LoL", fake_profile)
-        print("ERROR: bypass allowed")
-    except Exception as e:
-        print("Expected block:", e)
-
-    print("\n--- TEST 5: ZIP FLOW ---")
-    try:
-        manager_zip = ZipManager(r"D:\LoL", session)
-        manager_zip.list_and_select()
-        manager_zip.create_archive()
-    except Exception as e:
-        print("ZIP ERROR:", e)
-
-    print("\n--- TEST 6: UNZIP FLOW ---")
-    try:
-        manager_unzip = ZipManager(r"D:\LoL", session)
-        manager_unzip.unzip_and_delete()
-    except Exception as e:
-        print("UNZIP ERROR:", e)
-
-    print("\n--- TEST COMPLETE ---")

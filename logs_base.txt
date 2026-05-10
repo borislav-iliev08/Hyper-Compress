@@ -202,3 +202,16 @@
 [2026-05-02 14:48:04] Login success: petarr
 [2026-05-02 14:48:28] Login success: petarr
 [2026-05-02 14:49:18] Login success: petarr
+[2026-05-10 17:02:21] Registered user: peshkata
+[2026-05-10 17:02:29] Login success: peshkata
+[2026-05-10 17:03:32] Login success: peshkata
+[2026-05-10 17:05:21] Login success: peshkata
+[2026-05-10 17:08:19] Login success: peshkata
+[2026-05-10 17:22:20] Login success: peshkata
+[2026-05-10 17:25:45] Login success: peshkata
+[2026-05-10 17:26:54] Login success: peshkata
+[2026-05-10 17:29:32] Login success: peshkata
+[2026-05-10 17:29:54] Login success: peshkata
+[2026-05-10 17:31:25] Login success: peshkata
+[2026-05-10 17:32:09] Login success: peshkata
+[2026-05-10 17:34:46] Login success: peshkata
