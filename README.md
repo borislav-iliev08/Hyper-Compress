@@ -25,19 +25,16 @@ A professional, secure file compression and management tool built with Python an
    ```bash
    python main_file.py
    ```
-🔒 Security Notice
+## 🔐 Security Notice:
 
 This software is the intellectual property of Borislav Ivanov Iliev.Unauthorized modification of the developer information is strictly prohibited.
 
-📬 Contact
-Developer:
+## 📬 Contact
+#Developer:
     Borislav Ivanov Iliev
 
-Email: 
-    borislav718@gmail.com
-
-Location: 
-    Yambol, Bulgaria
+#Email: 
+    borislav718@gmail.com 
 
 
 ---
