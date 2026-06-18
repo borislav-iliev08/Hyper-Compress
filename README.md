@@ -27,14 +27,17 @@ A professional, secure file compression and management tool built with Python an
    ```
 🔒 Security Notice
 
-This software is the intellectual property of Borislav Ivanov Iliev. The source code includes license verification mechanisms. Unauthorized modification of the developer information is strictly prohibited.
+This software is the intellectual property of Borislav Ivanov Iliev.Unauthorized modification of the developer information is strictly prohibited.
 
 📬 Contact
-Developer: Borislav Ivanov Iliev
+Developer:
+    Borislav Ivanov Iliev
 
-Email: borislav718@gmail.com
+Email: 
+    borislav718@gmail.com
 
-Location: Yambol, Bulgaria
+Location: 
+    Yambol, Bulgaria
 
 
 ---
