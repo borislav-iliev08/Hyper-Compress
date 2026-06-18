@@ -1,6 +1,6 @@
-# Hyper Compress v1.0.0
+## Hyper Compress v1.0.0
 
-- A professional, secure file compression and management tool built with **Python** and **PyQt5**.
+A professional, secure file compression and management tool built with **Python** and **PyQt5**.
 
 ## Features
 - **User Authentication:** Secure login and registration system with hashed passwords.
@@ -10,7 +10,7 @@
 - **File History:** Tracks all user operations (archiving/extracting) for easy monitoring.
 - **Security:** Built-in license.
 
-## Installation:
+## Installation
    ```bash
    git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
    ```
@@ -31,8 +31,8 @@ This software is the intellectual property of ***Borislav Ivanov Iliev***.Modifi
 
 ## Contact Information
 
-**Developer**\
-Borislav Ivanov Iliev\
-**Email**\
-borislav718@gmail.com\
+**Developer**
+\\Borislav Ivanov Iliev\\
+**Email**
+\\borislav718@gmail.com\\
 
