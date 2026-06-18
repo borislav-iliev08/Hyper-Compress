@@ -1,6 +1,6 @@
 # Hyper Compress v1.0.0
 
-- **A professional, secure file compression and management tool built with Python and PyQt5.
+- A professional, secure file compression and management tool built with **Python** and **PyQt5**.
 
 ## 🚀 Features
 - **User Authentication:** Secure login and registration system with hashed passwords.
