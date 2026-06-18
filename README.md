@@ -7,12 +7,12 @@ A professional, secure file compression and management tool built with **Python*
 - **Compression & Extraction:** High-speed ZIP management using Python's core logic.
 - **Modular UI:** Modern dashboard with Sidebar navigation and multiple pages.
 - **Customizable Themes:** Support for Dark and Light modes.
-- **File History:** Tracks all user operations (archiving/extracting) for easy monitoring.
+- **File History:** Display all user operations (archiving/extracting) for easy monitoring.
 - **Security:** Built-in license.
 
 ## Installation
    ```bash
-   git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
+   git clone https://github.com/borislav-iliev08/Hyper-Compress.git(https://github.com/borislav-iliev08/Hyper-Compress.git)
    ```
 ## Install dependencies
 
@@ -23,7 +23,7 @@ A professional, secure file compression and management tool built with **Python*
 ## Run the application
 
    ```bash
-   python main_file.py
+   py main_file.py
    ```
 ## Security Notice
 
