@@ -16,11 +16,11 @@ A professional, secure file compression and management tool built with Python an
    git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
 Install dependencies:
 
-Bash
+```bash
 pip install PyQt5
 Run the application:
 
-Bash
+```bash
 python main_file.py
 🔒 Security Notice
 This software is the intellectual property of Borislav Ivanov Iliev. The source code includes license verification mechanisms. Unauthorized modification of the developer information is strictly prohibited.
