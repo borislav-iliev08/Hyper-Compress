@@ -2,7 +2,7 @@
 
 - A professional, secure file compression and management tool built with **Python** and **PyQt5**.
 
-## 🚀 Features
+## Features
 - **User Authentication:** Secure login and registration system with hashed passwords.
 - **Compression & Extraction:** High-speed ZIP management using Python's core logic.
 - **Modular UI:** Modern dashboard with Sidebar navigation and multiple pages.
@@ -25,9 +25,9 @@
    ```bash
    python main_file.py
    ```
-## 🔐 Security Notice:
+## Security Notice:
 
-This software is the intellectual property of Borislav Ivanov Iliev.Unauthorized modification of the developer information is strictly prohibited. 
+This software is the intellectual property of ***Borislav Ivanov Iliev***.Unauthorized modification of the developer information is strictly ***prohibited***. 
 
 ## Contact Information:
 
