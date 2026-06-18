@@ -32,7 +32,7 @@ This software is the intellectual property of ***Borislav Ivanov Iliev***.Unauth
 ## Contact Information:
 
   **Developer**:\
-      Borislav Ivanov Iliev\
+             .Borislav Ivanov Iliev\.
   **Email**: \
-      borislav718@gmail.com\
+            .borislav718@gmail.com\.
 
