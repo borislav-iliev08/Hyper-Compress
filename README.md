@@ -14,26 +14,25 @@
    ```bash
    git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
    ```
-## Install dependencies:
+## Install dependencies
 
    ```bash
    pip install PyQt5
    ```
 
-## Run the application:
+## Run the application
 
    ```bash
    python main_file.py
    ```
-## Security Notice:
+## Security Notice
 
-This software is the intellectual property of ***Borislav Ivanov Iliev***.Unauthorized modification of the developer information is strictly ***prohibited***. 
+This software is the intellectual property of ***Borislav Ivanov Iliev***.Modification of the developer information is ***prohibited***. 
 
-## Contact Information:
+## Contact Information
 
-**Developer**:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Borislav Ivanov Iliev  
-
-**Email**:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;borislav718@gmail.com
+**Developer**\
+Borislav Ivanov Iliev\
+**Email**\
+borislav718@gmail.com\
 
