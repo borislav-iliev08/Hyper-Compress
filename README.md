@@ -31,9 +31,9 @@ This software is the intellectual property of Borislav Ivanov Iliev.Unauthorized
 
 ## Contact
 
-**Developer**  
+**Developer:**  
 Borislav Ivanov Iliev  
 
-**Email**  
+*Email:*
 borislav718@gmail.com
 ---
