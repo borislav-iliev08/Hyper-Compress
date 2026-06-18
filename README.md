@@ -8,10 +8,9 @@ A professional, secure file compression and management tool built with Python an
 - **Modular UI:** Modern dashboard with Sidebar navigation and multiple pages.
 - **Customizable Themes:** Support for Dark and Light modes.
 - **File History:** Tracks all user operations (archiving/extracting) for easy monitoring.
-- **Security:** Built-in license verification and author protection.
+- **Security:** Built-in license.
 
-## 🛠️ Installation
-1. Clone the repository:
+## Installation:
    ```bash
    git clone [https://github.com/borislav-iliev08/Hyper-Compress.git](https://github.com/borislav-iliev08/Hyper-Compress.git)
    ```
