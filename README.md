@@ -29,9 +29,8 @@
 
 This software is the intellectual property of Borislav Ivanov Iliev.Unauthorized modification of the developer information is strictly prohibited. 
 
-## Contact Information
+## Contact Information:
 
-Developer    : Borislav Ivanov Iliev    
-----------------------------
-Email   : borislav718@gmail.com  
----
+  **Developer**  : Borislav Ivanov Iliev    
+  **Email** : borislav718@gmail.com  
+
