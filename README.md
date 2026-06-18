@@ -1,4 +1,4 @@
-## Hyper Compress v1.0.0
+# Hyper Compress v1.0.0
 
 A professional, secure file compression and management tool built with **Python** and **PyQt5**.
 
@@ -31,8 +31,8 @@ This software is the intellectual property of ***Borislav Ivanov Iliev***.Modifi
 
 ## Contact Information
 
-**Developer**
-\\Borislav Ivanov Iliev\\
-**Email**
-\\borislav718@gmail.com\\
+*Developer*
+\Borislav Ivanov Iliev\
+*Email*
+\borislav718@gmail.com\
 
