@@ -41,6 +41,9 @@ A professional, secure file compression and management tool built with **Python*
    pip install pyinstaller
    ```
    ```bash
+   pip install Pillow
+   ```
+   ```bash
    pyinstaller --noconfirm --onedir --windowed --add-data "images;images" --add-data "UI;UI" --icon="images/logo.png" GUI_version_of_app.py
    ```
 
