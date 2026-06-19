@@ -27,6 +27,9 @@ A professional, secure file compression and management tool built with **Python*
    ```bash
    pip install qtpy
    ```
+   ```bash
+   pip install pyinstaller
+   ```
 
 ## Run the application
 
