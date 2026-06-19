@@ -53,7 +53,7 @@ This software is the intellectual property of ***Borislav Ivanov Iliev***.Modifi
 
 ## Full Tutorial
   ```bash
-   [![Hyper Compress Demo](https://img.youtube.com/vi/lZgLGuTI6ik/maxresdefault.jpg)](https://youtu.be/lZgLGuTI6ik)
+   https://youtu.be/lZgLGuTI6ik
   ```
 ## Contact Information
 
