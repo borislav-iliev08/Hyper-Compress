@@ -11,7 +11,7 @@ A professional, secure file compression and management tool built with **Python*
 - **Customizable Themes:** Support for Dark and Light modes.
 - **File History:** Display all user operations (archiving/extracting) for easy monitoring.
 - **Security:** Built-in license.
-- 
+- <img width="1301" height="828" alt="Image" src="https://github.com/user-attachments/assets/21943fd9-29d9-4885-b851-d80e454f1d75" />
 
 ## Installation
    ```bash
