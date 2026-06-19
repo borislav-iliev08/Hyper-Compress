@@ -44,7 +44,7 @@ A professional, secure file compression and management tool built with **Python*
    pip install Pillow
    ```
    ```bash
-   pyinstaller --noconfirm --onedir --windowed --add-data "images;images" --add-data "UI;UI" --hidden-import="PyQt5.QtSvg" --collect-submodules PyQt5 --collect-all qtwidgets --icon="images/logo.png"GUI_version_of_app.py
+   pyinstaller --noconfirm --onedir --windowed --add-data "images;images" --add-data "UI;UI" --hidden-import="PyQt5.QtSvg" --collect-submodules PyQt5 --collect-all qtwidgets --icon="images/logo.png" GUI_version_of_app.py
    ```
 
 ## Security Notice
