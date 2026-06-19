@@ -12,7 +12,7 @@ A professional, secure file compression and management tool built with **Python*
 
 ## Installation
    ```bash
-   git clone https://github.com/borislav-iliev08/Hyper-Compress.git(https://github.com/borislav-iliev08/Hyper-Compress.git)
+   git clone https://github.com/borislav-iliev08/Hyper-Compress.git
    ```
 ## Install dependencies
 
