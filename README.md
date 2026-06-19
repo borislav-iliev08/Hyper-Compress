@@ -51,6 +51,10 @@ A professional, secure file compression and management tool built with **Python*
 
 This software is the intellectual property of ***Borislav Ivanov Iliev***.Modification of the developer information is ***prohibited***. 
 
+## Full Tutorial
+  ```bash
+   [![Hyper Compress Demo](https://img.youtube.com/vi/lZgLGuTI6ik/maxresdefault.jpg)](https://youtu.be/lZgLGuTI6ik)
+  ```
 ## Contact Information
 
 ***Developer:***
