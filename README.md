@@ -4,7 +4,7 @@ A professional, secure file compression and management tool built with **Python*
 
 ## Features
 - **User Authentication:** Secure login and registration system with hashed passwords.
-- <img width="1302" height="829" alt="Image" src="https://github.com/user-attachments/assets/ead420a1-1538-49fc-8a90-b0b16555637b" />
+<img width="1302" height="829" alt="Image" src="https://github.com/user-attachments/assets/ead420a1-1538-49fc-8a90-b0b16555637b" />
 - **Compression & Extraction:** High-speed ZIP management using Python's core logic.
 - **Modular UI:** Modern dashboard with Sidebar navigation and multiple pages.
 - **Customizable Themes:** Support for Dark and Light modes.
