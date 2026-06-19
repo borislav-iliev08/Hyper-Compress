@@ -19,8 +19,11 @@ A professional, secure file compression and management tool built with **Python*
    ```bash
    pip install pyqt5
    ```
- ```bash
+   ```bash
    pip install qtwidgets
+   ```
+   ```bash
+   pip install qtpy
    ```
 
 ## Run the application
