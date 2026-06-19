@@ -29,7 +29,10 @@ A professional, secure file compression and management tool built with **Python*
 ## Run the application
 
    ```bash
-   py main_file.py
+   cd .\Hyper-Compress
+   ```
+   ```bash
+   py GUI_version_of_app.py
    ```
 ## Security Notice
 
