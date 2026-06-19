@@ -11,6 +11,7 @@ A professional, secure file compression and management tool built with **Python*
 - **Customizable Themes:** Support for Dark and Light modes.
 - **File History:** Display all user operations (archiving/extracting) for easy monitoring.
 - **Security:** Built-in license.
+- 
 
 ## Installation
    ```bash
@@ -27,18 +28,22 @@ A professional, secure file compression and management tool built with **Python*
    ```bash
    pip install qtpy
    ```
-   ```bash
-   pip install pyinstaller
-   ```
 
 ## Run the application
-
    ```bash
    cd .\Hyper-Compress
    ```
    ```bash
    py GUI_version_of_app.py
    ```
+## Make desktop app
+   ```bash
+   pip install pyinstaller
+   ```
+   ```bash
+   pyinstaller --noconfirm --onedir --windowed --add-data "images;images" --add-data "UI;UI" --icon="images/logo.png" GUI_version_of_app.py
+   ```
+
 ## Security Notice
 
 This software is the intellectual property of ***Borislav Ivanov Iliev***.Modification of the developer information is ***prohibited***. 
