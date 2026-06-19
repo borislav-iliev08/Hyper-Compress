@@ -105,12 +105,15 @@ class Authentication:
 
     @staticmethod
     def update_username(old_user, new_user):
-        if not os.path.exists(path_to_dir): return
+        db_file = os.path.join(path_to_dir, "database.txt")
+
+        if not os.path.exists(db_file):
+            return
 
         lines = []
         user_found = False
 
-        with open(path_to_dir, 'r', encoding='utf-8') as f:
+        with open(db_file, 'r', encoding='utf-8') as f:
             for line in f:
                 if not line.strip(): continue
                 parts = line.strip().split('|')
@@ -129,10 +132,18 @@ class Authentication:
         old_path = os.path.join(path_to_dir, 'users', old_user)
         new_path = os.path.join(path_to_dir, 'users', new_user)
 
-        if os.path.exists(old_path):
-            os.rename(old_path, new_path)
+        import gc
+        gc.collect()
 
-        with open(path_to_dir, 'w', encoding='utf-8') as f:
+        if os.path.exists(old_path):
+            try:
+                os.rename(old_path, new_path)
+            except PermissionError:
+                import time
+                time.sleep(0.2)
+                os.rename(old_path, new_path)
+
+        with open(db_file, 'w', encoding='utf-8') as f:
             for p in lines:
                 f.write("|".join(p) + "\n")
 
